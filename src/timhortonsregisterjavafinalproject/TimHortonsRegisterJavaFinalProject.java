@@ -28,6 +28,7 @@ public class TimHortonsRegisterJavaFinalProject extends Application
         
         stage.setScene(scene);
         stage.show();
+        stage.setTitle("Tim Hortons");
     }
 
     /**

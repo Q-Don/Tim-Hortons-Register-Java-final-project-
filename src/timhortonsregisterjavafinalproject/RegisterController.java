@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 /**
@@ -24,7 +25,9 @@ public class RegisterController implements Initializable
     private Label label;
     
     @FXML
-    private Label lBL;
+    private Label lBL;//Testing this thing here.
+    @FXML
+    private Button btn;//Testing again
     
     @FXML
     private void handleButtonAction(ActionEvent event)
