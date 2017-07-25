@@ -31,6 +31,9 @@ public class RegisterController implements Initializable
     
     @FXML
     private Label lBL123;//Testing this thing here.
+    
+    @FXML
+    private Label lbl456;//Testing this thing here.
    
    
     @FXML
