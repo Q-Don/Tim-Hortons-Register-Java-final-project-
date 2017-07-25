@@ -34,8 +34,9 @@ public class RegisterController implements Initializable
    
    
     @FXML
-    private void handleButtonAction(ActionEvent event)
+    private void Display(ActionEvent event)
     {
+        tarea.appendText("Test");
     }
     
     @Override
