@@ -39,7 +39,8 @@ public class RegisterController implements Initializable
     @FXML
     private void Display(ActionEvent event)
     {
-        tarea.appendText("Test");
+        tarea.appendText("Test");//More testing
+        label.setText("Hello World");//Do you get?
     }
     
     @Override
