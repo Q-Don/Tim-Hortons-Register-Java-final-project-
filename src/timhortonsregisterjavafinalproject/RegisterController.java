@@ -24,7 +24,7 @@ public class RegisterController implements Initializable
     private Label label;
     
     @FXML
-    private Label label2;
+    private Label lBL;
     
     @FXML
     private void handleButtonAction(ActionEvent event)
