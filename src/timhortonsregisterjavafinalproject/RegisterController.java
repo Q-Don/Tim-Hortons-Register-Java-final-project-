@@ -26,13 +26,14 @@ public class RegisterController implements Initializable
     
     @FXML
     private Label lBL;//Testing this thing here.
-    @FXML
-    private Button btn;//Testing again
     
+    @FXML
+    private Label lBL123;//Testing this thing here.
+   
+   
     @FXML
     private void handleButtonAction(ActionEvent event)
     {
-
     }
     
     @Override
