@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 
 /**
  *
@@ -23,7 +24,8 @@ public class RegisterController implements Initializable
     
     @FXML
     private Label label;
-    
+    @FXML
+    private TextArea tarea;//testing more stuff.
     @FXML
     private Label lBL;//Testing this thing here.
     @FXML
