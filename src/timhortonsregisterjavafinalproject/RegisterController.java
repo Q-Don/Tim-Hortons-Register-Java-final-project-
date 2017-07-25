@@ -24,6 +24,9 @@ public class RegisterController implements Initializable
     private Label label;
     
     @FXML
+    private Label label2;
+    
+    @FXML
     private void handleButtonAction(ActionEvent event)
     {
         System.out.println("You clicked me!");
