@@ -35,11 +35,15 @@ public class RegisterController implements Initializable
     @FXML
     private Label lbl456;//Testing this thing here.
    
+     @FXML
+    private Label lbltim;//Testing this thing here.
+   
    
     @FXML
     private void Display(ActionEvent event)
     {
         tarea.appendText("Test");
+        
     }
     
     @Override
