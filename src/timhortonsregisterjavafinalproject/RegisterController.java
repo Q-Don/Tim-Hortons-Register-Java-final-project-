@@ -23,27 +23,12 @@ public class RegisterController implements Initializable
 {
     
     @FXML
-    private Label label;
-    @FXML
-    private TextArea tarea;//testing more stuff.
-    @FXML
-    private Label lBL;//Testing this thing here.
-    
-    @FXML
-    private Label lBL123;//Testing this thing here.
-    
-    @FXML
-    private Label lbl456;//Testing this thing here.
-   
-     @FXML
-    private Label lbltim;//Testing this thing here.
-   
+    private Button order;
    
     @FXML
-    private void Display(ActionEvent event)
+    private void order(ActionEvent event)
     {
-        tarea.appendText("Test");//More testing
-        label.setText("Hello World");//Do you get?
+      
     }
     
     @Override
