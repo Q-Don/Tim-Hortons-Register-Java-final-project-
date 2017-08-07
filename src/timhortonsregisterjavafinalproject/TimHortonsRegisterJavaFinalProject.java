@@ -26,15 +26,19 @@ public class TimHortonsRegisterJavaFinalProject extends Application
     {
         Parent registerRoot = FXMLLoader.load(getClass().getResource("Register.fxml"));
         Parent timCardRoot= FXMLLoader.load(getClass().getResource("TimCard.fxml"));
+        Parent menuRoot = FXMLLoader.load(getClass().getResource("Menu.fxml"));
         
         Scene scene1 = new Scene(registerRoot);
         Scene scene2 = new Scene(timCardRoot);
+        Scene scene3 = new Scene (menuRoot);
         
         stage1.setScene(scene1);
         stage1.show();
         stage1.setTitle("Tim Hortons");
         stage2.setScene(scene2);
         stage2.setTitle("Tim Card");
+        stage3.setScene(scene3);
+        stage3.setTitle("Menu");
     }
     
     public static void LaunchTimCard()
@@ -49,6 +53,13 @@ public class TimHortonsRegisterJavaFinalProject extends Application
         stage1.show();
         stage2.hide();
         stage3.hide();
+    }
+    
+    public static void LaunchMenu()
+    {
+        stage3.show();
+        stage1.hide();
+        stage2.hide();
     }
             
             

@@ -40,7 +40,7 @@ public class RegisterController implements Initializable
     }
 
     @FXML
-    private void exit(ActionEvent event)
+    private void Exit(ActionEvent event)
     {
      Alert a = new Alert(Alert.AlertType.CONFIRMATION); 
      a.setTitle("Exit Application");
@@ -53,6 +53,11 @@ public class RegisterController implements Initializable
      });
     }
    
+    @FXML
+    private void Menu(ActionEvent even)
+    {
+       TimHortonsRegisterJavaFinalProject.LaunchMenu();
+    }
         
     @Override
     public void initialize(URL url, ResourceBundle rb)
