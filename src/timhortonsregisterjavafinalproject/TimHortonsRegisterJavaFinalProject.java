@@ -18,22 +18,40 @@ import javafx.stage.Stage;
  */
 public class TimHortonsRegisterJavaFinalProject extends Application
 {
-    
+    static Stage stage1=new Stage();
+    static Stage stage2=new Stage();
+    static Stage stage3=new Stage();
     @Override
     public void start(Stage stage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("Register.fxml"));
+        Parent registerRoot = FXMLLoader.load(getClass().getResource("Register.fxml"));
+        Parent timCardRoot= FXMLLoader.load(getClass().getResource("TimCard.fxml"));
         
-        Scene scene = new Scene(root);
+        Scene scene1 = new Scene(registerRoot);
+        Scene scene2 = new Scene(timCardRoot);
         
-        stage.setScene(scene);
-        stage.show();
-        stage.setTitle("Tim Hortons");
+        stage1.setScene(scene1);
+        stage1.show();
+        stage1.setTitle("Tim Hortons");
+        stage2.setScene(scene2);
+        stage2.setTitle("Tim Card");
     }
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    public static void LaunchTimCard()
+    {
+        stage2.show();
+        stage1.hide();
+        stage3.hide();
+    }
+    
+    public static void LaunchRegister()
+    {
+        stage1.show();
+        stage2.hide();
+        stage3.hide();
+    }
+            
+            
     public static void main(String[] args)
     {
         launch(args);

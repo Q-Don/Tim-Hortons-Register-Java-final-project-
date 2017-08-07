@@ -18,12 +18,12 @@
             <Font name="Forte" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="80.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: black;" text="TimCard" textFill="WHITE">
+      <Button fx:id="timcard" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#TimCard" style="-fx-background-color: transparent; -fx-border-color: black;" text="TimCard" textFill="WHITE">
          <font>
             <Font name="Forte" size="24.0" />
          </font>
       </Button>
-      <Button layoutX="616.0" layoutY="357.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: black;" text="Exit" textFill="WHITE">
+      <Button fx:id="exit" layoutX="616.0" layoutY="357.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent; -fx-border-color: black;" text="Exit" textFill="WHITE">
          <font>
             <Font name="Forte" size="24.0" />
          </font>

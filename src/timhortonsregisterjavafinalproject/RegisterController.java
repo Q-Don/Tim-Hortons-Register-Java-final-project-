@@ -25,13 +25,17 @@ public class RegisterController implements Initializable
 {
     
     @FXML
-    private Button order;
+    private Button timcard;
     @FXML
     private Button exit;
+    @FXML
+    private Button menu;
     
    @FXML
-    private void order(ActionEvent event)
+    private void TimCard (ActionEvent event)
     {
+        TimHortonsRegisterJavaFinalProject.LaunchTimCard();
+        
     
     }
 
