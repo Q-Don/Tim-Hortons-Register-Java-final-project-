@@ -11,7 +11,9 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
@@ -24,13 +26,30 @@ public class RegisterController implements Initializable
     
     @FXML
     private Button order;
-   
     @FXML
+    private Button exit;
+    
+   @FXML
     private void order(ActionEvent event)
     {
-      
-    }
     
+    }
+
+    @FXML
+    private void exit(ActionEvent event)
+    {
+     Alert a = new Alert(Alert.AlertType.CONFIRMATION); 
+     a.setTitle("Exit Application");
+     a.setHeaderText("Confirm");
+     a.setContentText("Press OK if you want to exit");
+     a.showAndWait().ifPresent(response->
+     {
+      if(response==ButtonType.OK)
+      System.exit(0);
+     });
+    }
+   
+        
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
