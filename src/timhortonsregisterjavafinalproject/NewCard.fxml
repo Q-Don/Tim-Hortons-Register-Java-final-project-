@@ -9,15 +9,15 @@
 
 <AnchorPane id="AnchorPane" prefHeight="317.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timhortonsregisterjavafinalproject.NewCardController">
    <children>
-      <Label layoutX="62.0" layoutY="43.0" text="LAST NAME" />
-      <Label layoutX="61.0" layoutY="85.0" text="FIRST NAME" />
-      <Label layoutX="61.0" layoutY="168.0" text="INITIAL BALANCE" />
-      <TextField layoutX="208.0" layoutY="39.0" />
-      <TextField layoutX="208.0" layoutY="81.0" />
-      <TextField layoutX="208.0" layoutY="123.0" />
-      <TextField layoutX="208.0" layoutY="164.0" />
-      <Label layoutX="61.0" layoutY="127.0" text="EMAIL ID" />
-      <Button layoutX="231.0" layoutY="262.0" mnemonicParsing="false" text="CANCEL" />
-      <Button layoutX="321.0" layoutY="262.0" mnemonicParsing="false" text="BUY" />
+      <Label fx:id="lname" layoutX="62.0" layoutY="43.0" text="LAST NAME" />
+      <Label fx:id="fname" layoutX="61.0" layoutY="85.0" text="FIRST NAME" />
+      <Label fx:id="balance" layoutX="61.0" layoutY="168.0" text="INITIAL BALANCE" />
+      <TextField fx:id="txt1" layoutX="208.0" layoutY="39.0" />
+      <TextField fx:id="txt2" layoutX="208.0" layoutY="81.0" />
+      <TextField fx:id="txt3" layoutX="208.0" layoutY="123.0" />
+      <TextField fx:id="txt4" layoutX="208.0" layoutY="164.0" />
+      <Label fx:id="email" layoutX="61.0" layoutY="127.0" text="EMAIL ID" />
+      <Button fx:id="Cancel" layoutX="231.0" layoutY="262.0" mnemonicParsing="false" text="CANCEL" />
+      <Button fx:id="Buy" layoutX="321.0" layoutY="262.0" mnemonicParsing="false" text="BUY" />
    </children>
 </AnchorPane>
