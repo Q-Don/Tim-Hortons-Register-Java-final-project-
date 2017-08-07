@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Simarpreet Kaur, Quardin Lyttle
+Object Oriented Program 2 Java- PROG 24178 - P11 12248 / 106
+Computer Engineering Tech
+Sheridan College
  */
 package timhortonsregisterjavafinalproject;
 
@@ -10,16 +11,13 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 
 /**
- * FXML Controller class
  *
- * @author peel
+ * @author Simarpreet Kaur, Quardin Lyttle
  */
 public class MenuController implements Initializable
 {
 
-    /**
-     * Initializes the controller class.
-     */
+ 
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {

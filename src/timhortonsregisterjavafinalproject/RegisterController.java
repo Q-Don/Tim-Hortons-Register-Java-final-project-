@@ -32,7 +32,7 @@ public class RegisterController implements Initializable
     private Button menu;
     
    @FXML
-    private void TimCard (ActionEvent event)
+    private void TimCard (ActionEvent event) //Launch the tim card section of program
     {
         TimHortonsRegisterJavaFinalProject.LaunchTimCard();
         
@@ -40,7 +40,7 @@ public class RegisterController implements Initializable
     }
 
     @FXML
-    private void Exit(ActionEvent event)
+    private void Exit(ActionEvent event) //exit application
     {
      Alert a = new Alert(Alert.AlertType.CONFIRMATION); 
      a.setTitle("Exit Application");
@@ -54,7 +54,7 @@ public class RegisterController implements Initializable
     }
    
     @FXML
-    private void Menu(ActionEvent even)
+    private void Menu(ActionEvent even) //launch menu section of program
     {
        TimHortonsRegisterJavaFinalProject.LaunchMenu();
     }
