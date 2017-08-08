@@ -32,6 +32,8 @@ public class BalanceController implements Initializable
     private TextArea tarea;
     @FXML 
     private Button Search;
+    @FXML
+    private Button back;
     @FXML 
     private Label Searchemail;
     
@@ -82,14 +84,33 @@ public class BalanceController implements Initializable
        }
 
        }
+       else
+       {
+           Alert a = new Alert(Alert.AlertType.ERROR);
+           a.setTitle("Alert");
+           a.setHeaderText("Alert");
+           a.setContentText("Please enter email address.");
+           a.showAndWait().ifPresent(response ->
+           {
+               if(response==ButtonType.OK)
+                   a.close();
+           });
+       }
+    }
+    
+    @FXML
+    public void Back(ActionEvent event)
+    {
+        TimHortonsRegisterJavaFinalProject.balanceStage.hide();
     }
   
 
 
 
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+    public void initialize(URL url, ResourceBundle rb) 
+    {
+        tarea.setEditable(false);
     }    
     
 }

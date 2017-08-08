@@ -22,6 +22,31 @@ public class MenuController implements Initializable
 
  @FXML
  private Button back;
+ @FXML
+ private Button french;
+ @FXML
+ private Button capp;
+ @FXML
+ private Button latte;
+ @FXML
+ private Button hotchocolate;
+ @FXML
+ private Button original;
+ @FXML
+ private Button darkroast;
+ @FXML
+ private Button decaf;
+ @FXML
+ private Button tea;
+ @FXML
+ private Button icecapp;
+ @FXML
+ private Button icecoffee;
+ @FXML
+ private Button lemonade;
+ @FXML
+ private Button smoothie;
+ 
  
  
  @FXML

@@ -25,7 +25,7 @@
                               <Image url="@../Menu%20Items/coffee/french%20vanilla.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="1.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="FRENCH VANILLA" textFill="WHITE">
+                        <Button fx:id="french" layoutX="1.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="FRENCH VANILLA" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
@@ -35,7 +35,7 @@
                               <Image url="@../Menu%20Items/coffee/cappuccino.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="178.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="CAPPUCCINO" textFill="WHITE">
+                        <Button fx:id="capp" layoutX="178.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="CAPPUCCINO" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
@@ -45,7 +45,7 @@
                               <Image url="@../Menu%20Items/coffee/lattE.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="371.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="LATTE" textFill="WHITE">
+                        <Button fx:id="latte" layoutX="371.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="LATTE" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
@@ -55,7 +55,7 @@
                               <Image url="@../Menu%20Items/coffee/hot-chocolate.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="510.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOT CHOCOLATE" textFill="WHITE">
+                        <Button fx:id="hotchocolate" layoutX="510.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOT CHOCOLATE" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
@@ -80,22 +80,62 @@
                               <Image url="@../Menu%20Items/coffee/specialty-tea.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="1.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="ORIGINAL BLEND" textFill="WHITE">
+                        <Button fx:id="original" layoutX="1.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="ORIGINAL BLEND" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
                         </Button>
-                        <Button layoutX="179.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="DARK ROAST" textFill="WHITE">
+                        <Button fx:id="darkroast" layoutX="179.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="DARK ROAST" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
                         </Button>
-                        <Button layoutX="370.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="DECAF" textFill="WHITE">
+                        <Button fx:id="decaf" layoutX="370.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="DECAF" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
                         </Button>
-                        <Button layoutX="523.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="SPECIALTY TEA" textFill="WHITE">
+                        <Button fx:id="tea" layoutX="523.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="SPECIALTY TEA" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="17.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/coffee/iced-capp-product-us.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="185.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/coffee/iced-coffee.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="357.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/coffee/frozen-lemonade.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="543.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/coffee/real-fruit-smoothie.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="icecapp" layoutX="15.0" layoutY="563.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="ICED CAPP" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="icecoffee" layoutX="179.0" layoutY="563.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="ICED COFFEE" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="lemonade" layoutX="322.0" layoutY="563.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="FROZEN LEMONADE" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="smoothie" layoutX="523.0" layoutY="563.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="FRUIT SMOOTHIE" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>

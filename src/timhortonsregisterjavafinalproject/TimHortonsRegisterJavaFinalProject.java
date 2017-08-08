@@ -22,6 +22,7 @@ public class TimHortonsRegisterJavaFinalProject extends Application
     static Stage timCardStage = new Stage();
     static Stage menuStage = new Stage();
     static Stage newCardStage = new Stage();
+    static Stage balanceStage = new Stage();
     @Override
     public void start(Stage stage) throws Exception
     {
@@ -29,11 +30,13 @@ public class TimHortonsRegisterJavaFinalProject extends Application
         Parent timCardRoot= FXMLLoader.load(getClass().getResource("TimCard.fxml"));
         Parent menuRoot = FXMLLoader.load(getClass().getResource("Menu.fxml"));
         Parent newCardRoot = FXMLLoader.load(getClass().getResource("NewCard.fxml"));
+        Parent balance = FXMLLoader.load(getClass().getResource("balance.fxml"));
         
         Scene scene1 = new Scene(registerRoot);
         Scene scene2 = new Scene(timCardRoot);
         Scene scene3 = new Scene (menuRoot);
         Scene scene4 = new Scene(newCardRoot);
+        Scene scene5 = new Scene(balance);
         
         registerStage.setScene(scene1);
         registerStage.show();
@@ -44,6 +47,8 @@ public class TimHortonsRegisterJavaFinalProject extends Application
         menuStage.setTitle("Menu");
         newCardStage.setScene(scene4);
         newCardStage.setTitle("Buy New Card");
+        balanceStage.setTitle("Check Balance");
+        balanceStage.setScene(scene5);
     }
     
     public static void LaunchTimCard()
