@@ -60,6 +60,46 @@
                               <Font name="Arial Black" size="13.0" />
                            </font>
                         </Button>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="17.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/coffee/original-blend.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="185.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/coffee/darkroast.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="357.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/coffee/decaf-blend-product-us.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="191.0" fitWidth="126.0" layoutX="523.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/coffee/specialty-tea.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="1.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="ORIGINAL BLEND" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="179.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="DARK ROAST" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="370.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="DECAF" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="523.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="SPECIALTY TEA" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
                      </children></AnchorPane>
             </content>
           </Tab>
