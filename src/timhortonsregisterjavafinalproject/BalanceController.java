@@ -55,14 +55,14 @@ public class BalanceController implements Initializable
            {
                Scanner sc=new Scanner(scan.next());
                sc.useDelimiter(",");
-               if(sc.next().equals(email))
+               if(sc.next().equalsIgnoreCase(email))
                {
                   
                    String fname = sc.next();       
                    String lname = sc.next();
                    double inibal = sc.nextDouble();
                    
-                   tarea.appendText("\n Your Email:"+email+":\n First Name: "+fname+"\t Last Name: "+lname+"\t Your Balance: "+inibal);
+                   tarea.appendText("\n Your Email:"+email+"\n Name: "+fname+ " "+ lname+"\n Your Balance: "+inibal);
                }
            }
            scan.close();
@@ -104,8 +104,13 @@ public class BalanceController implements Initializable
         TimHortonsRegisterJavaFinalProject.balanceStage.hide();
     }
   
-
-
+@FXML
+    public void CLEAR(ActionEvent event)
+    {
+    tarea.clear();
+    txtsearch.clear();
+    }
+    
 
     @Override
     public void initialize(URL url, ResourceBundle rb) 
