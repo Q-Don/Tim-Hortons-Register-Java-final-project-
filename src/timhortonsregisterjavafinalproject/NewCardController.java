@@ -8,6 +8,7 @@ package timhortonsregisterjavafinalproject;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -30,18 +31,24 @@ public class NewCardController implements Initializable
     @FXML 
     private Label fname;
     @FXML 
-    private Label email;
+    private Label emailID;
     @FXML 
     private Label balance;
     @FXML 
-    private TextField txt1;
+    private TextField firstname;
     @FXML 
-    private TextField txt2;
+    private TextField lastname;
    @FXML 
-    private TextField txt3;
+    private TextField email;
    @FXML 
-    private TextField txt4;
+    private TextField initialBalance;
     
+   
+   @FXML
+   public void Cancel(ActionEvent event)
+   {
+       TimHortonsRegisterJavaFinalProject.newCardStage.close();
+   }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

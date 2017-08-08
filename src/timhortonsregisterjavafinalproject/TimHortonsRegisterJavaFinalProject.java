@@ -18,48 +18,53 @@ import javafx.stage.Stage;
  */
 public class TimHortonsRegisterJavaFinalProject extends Application
 {
-    static Stage stage1=new Stage();
-    static Stage stage2=new Stage();
-    static Stage stage3=new Stage();
+    static Stage registerStage = new Stage();
+    static Stage timCardStage = new Stage();
+    static Stage menuStage = new Stage();
+    static Stage newCardStage = new Stage();
     @Override
     public void start(Stage stage) throws Exception
     {
         Parent registerRoot = FXMLLoader.load(getClass().getResource("Register.fxml"));
         Parent timCardRoot= FXMLLoader.load(getClass().getResource("TimCard.fxml"));
         Parent menuRoot = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+        Parent newCardRoot = FXMLLoader.load(getClass().getResource("NewCard.fxml"));
         
         Scene scene1 = new Scene(registerRoot);
         Scene scene2 = new Scene(timCardRoot);
         Scene scene3 = new Scene (menuRoot);
+        Scene scene4 = new Scene(newCardRoot);
         
-        stage1.setScene(scene1);
-        stage1.show();
-        stage1.setTitle("Tim Hortons");
-        stage2.setScene(scene2);
-        stage2.setTitle("Tim Card");
-        stage3.setScene(scene3);
-        stage3.setTitle("Menu");
+        registerStage.setScene(scene1);
+        registerStage.show();
+        registerStage.setTitle("Tim Hortons");
+        timCardStage.setScene(scene2);
+        timCardStage.setTitle("Tim Card");
+        menuStage.setScene(scene3);
+        menuStage.setTitle("Menu");
+        newCardStage.setScene(scene4);
+        newCardStage.setTitle("Buy New Card");
     }
     
     public static void LaunchTimCard()
     {
-        stage2.show();
-        stage1.hide();
-        stage3.hide();
+        timCardStage.show();
+        registerStage.hide();
+        menuStage.hide();
     }
     
     public static void LaunchRegister()
     {
-        stage1.show();
-        stage2.hide();
-        stage3.hide();
+        registerStage.show();
+        timCardStage.hide();
+        menuStage.hide();
     }
     
     public static void LaunchMenu()
     {
-        stage3.show();
-        stage1.hide();
-        stage2.hide();
+        menuStage.show();
+        registerStage.hide();
+        timCardStage.hide();
     }
             
             

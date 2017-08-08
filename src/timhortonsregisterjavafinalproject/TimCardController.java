@@ -31,10 +31,16 @@ public class TimCardController implements Initializable
    private Button buy;
    
    @FXML
-   public void back(ActionEvent event)
+   public void Back(ActionEvent event)
    {
        TimHortonsRegisterJavaFinalProject.LaunchRegister();
        
+   }
+   
+   @FXML
+   public void Buy(ActionEvent event)
+   {
+       TimHortonsRegisterJavaFinalProject.newCardStage.show();
    }
            
     @Override
