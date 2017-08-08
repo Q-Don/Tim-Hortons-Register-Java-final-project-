@@ -6,7 +6,11 @@ Sheridan College
  */
 package timhortonsregisterjavafinalproject;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -36,16 +40,35 @@ public class NewCardController implements Initializable
     @FXML 
     private Label balance;
     @FXML 
-    private TextField firstname;
+    private TextField txtfname;
     @FXML 
-    private TextField lastname;
+    private TextField txtlname;
    @FXML 
-    private TextField email;
+    private TextField txtemail;
    @FXML 
-    private TextField initialBalance;
+    private TextField txtinibal;
    
    File data = new File("Time Card Data/timCardData.txt");
-    
+    @FXML
+    private void WRITE(ActionEvent event) throws IOException
+    {
+       PrintWriter output;
+       String firstname=txtfname.getText();
+       String lastname=txtlname.getText();
+       String email=txtemail.getText();
+       double intialbalance =Double.parseDouble(txtinibal.getText());
+     
+         try
+         {
+         output = new PrintWriter(new BufferedWriter(new FileWriter(data,true)));
+         output.println(firstname+","+lastname+","+email+","+intialbalance);
+         output.close();
+         }
+         catch(Exception e)
+                 {
+                 System.out.println("file not found-write");
+                 }
+    }
    
    @FXML
    public void Cancel(ActionEvent event)
