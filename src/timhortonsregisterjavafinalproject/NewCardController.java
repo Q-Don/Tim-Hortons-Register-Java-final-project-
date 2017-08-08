@@ -48,7 +48,7 @@ public class NewCardController implements Initializable
    @FXML 
     private TextField txtinibal;
    
-   File data = new File("Time Card Data/timCardData.txt");
+   File data = new File("src/Tim Card Data/timCardData.txt");
     @FXML
     private void WRITE(ActionEvent event) throws IOException
     {
@@ -74,6 +74,10 @@ public class NewCardController implements Initializable
    public void Cancel(ActionEvent event)
    {
        TimHortonsRegisterJavaFinalProject.newCardStage.close();
+       txtfname.clear();
+       txtlname.clear();
+       txtemail.clear();
+       txtinibal.clear();
    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
