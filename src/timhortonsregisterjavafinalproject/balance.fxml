@@ -8,7 +8,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timhortonsregisterjavafinalproject.BalanceController">
    <children>
-      <Button fx:id="Search" layoutX="151.0" layoutY="85.0" mnemonicParsing="false" onAction="#Display" text="SEARCH" />
+      <Button fx:id="Search" layoutX="151.0" layoutY="85.0" mnemonicParsing="false" onAction="#Display" text="CHECK BALANCE" />
       <TextField fx:id="txtsearch" layoutX="151.0" layoutY="35.0" />
       <TextArea fx:id="tarea" layoutX="14.0" layoutY="135.0" prefHeight="243.0" prefWidth="297.0" />
       <Label fx:id="Searchemail" layoutX="38.0" layoutY="39.0" text="Enter your Email" />
