@@ -75,6 +75,7 @@ public class NewCardController implements Initializable
          txtlname.clear();
          txtfname.clear();
          txtinibal.clear();
+         thanks.setText("Tim Card Successfully Registered!");
          
     }
    
@@ -86,7 +87,7 @@ public class NewCardController implements Initializable
        txtlname.clear();
        txtemail.clear();
        txtinibal.clear();
-       thanks.setText("Tim Card Successfully Registered!");
+       
    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
