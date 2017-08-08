@@ -6,6 +6,7 @@ Sheridan College
  */
 package timhortonsregisterjavafinalproject;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -42,6 +43,8 @@ public class NewCardController implements Initializable
     private TextField email;
    @FXML 
     private TextField initialBalance;
+   
+   File data = new File("Time Card Data/timCardData.txt");
     
    
    @FXML
