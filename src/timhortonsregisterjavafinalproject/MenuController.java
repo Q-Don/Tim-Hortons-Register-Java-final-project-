@@ -12,7 +12,7 @@ import javafx.fxml.Initializable;
 
 /**
  *
- * @author Simarpreet Kaur, Quardin Lyttle
+// * @author Simarpreet Kaur, Quardin Lyttle
  */
 public class MenuController implements Initializable
 {
