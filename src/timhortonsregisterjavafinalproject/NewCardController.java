@@ -61,7 +61,7 @@ public class NewCardController implements Initializable
          try
          {
          output = new PrintWriter(new BufferedWriter(new FileWriter(data,true)));
-         output.println(firstname+","+lastname+","+email+","+intialbalance);
+         output.println(email+","+firstname+","+lastname+","+intialbalance);
          output.close();
          }
          catch(Exception e)
