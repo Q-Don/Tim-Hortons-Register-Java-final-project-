@@ -66,7 +66,6 @@ public class TimHortonsRegisterJavaFinalProject extends Application
         menuStage.show();
         registerStage.hide();
         timCardStage.hide();
-        menuStage.hide();
         newCardStage.hide();
     }
             
