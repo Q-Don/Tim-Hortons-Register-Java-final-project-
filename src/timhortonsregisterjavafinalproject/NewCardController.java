@@ -39,6 +39,8 @@ public class NewCardController implements Initializable
     private Label emailID;
     @FXML 
     private Label balance;
+    @FXML
+    private Label thanks;
     @FXML 
     private TextField txtfname;
     @FXML 
@@ -68,6 +70,12 @@ public class NewCardController implements Initializable
                  {
                  System.out.println("file not found-write");
                  }
+         
+         txtemail.clear();
+         txtlname.clear();
+         txtfname.clear();
+         txtinibal.clear();
+         
     }
    
    @FXML
@@ -78,6 +86,7 @@ public class NewCardController implements Initializable
        txtlname.clear();
        txtemail.clear();
        txtinibal.clear();
+       thanks.setText("Tim Card Successfully Registered!");
    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
