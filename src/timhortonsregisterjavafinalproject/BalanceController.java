@@ -37,6 +37,8 @@ public class BalanceController implements Initializable
     @FXML 
     private Label Searchemail;
     
+    private double chbalance =0;
+    
   File data = new File("src/Tim Card Data/timCardData.txt");
     
      @FXML
@@ -61,6 +63,7 @@ public class BalanceController implements Initializable
                    String fname = sc.next();       
                    String lname = sc.next();
                    double inibal = sc.nextDouble();
+                   chbalance=inibal;
                    
                    tarea.appendText("\n Your Email: "+email+"\n Name: "+fname+ " "+ lname+"\n Your Balance: $"+inibal);
                }

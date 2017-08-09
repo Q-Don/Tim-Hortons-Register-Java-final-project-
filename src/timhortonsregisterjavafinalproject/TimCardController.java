@@ -48,6 +48,12 @@ public class TimCardController implements Initializable
    {
        TimHortonsRegisterJavaFinalProject.balanceStage.show();
    }
+   @FXML
+   public void Reload(ActionEvent event)
+   {
+       TimHortonsRegisterJavaFinalProject.reloadStage.show();
+       
+   }
            
     @Override
     public void initialize(URL url, ResourceBundle rb)

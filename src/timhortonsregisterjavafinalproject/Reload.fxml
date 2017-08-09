@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="333.0" prefWidth="423.0" style="-fx-background-color: #e83200;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timhortonsregisterjavafinalproject.NewCardController">
+<AnchorPane id="AnchorPane" prefHeight="333.0" prefWidth="423.0" style="-fx-background-color: #e83200;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timhortonsregisterjavafinalproject.ReloadController">
    <children>
       <ImageView fitHeight="283.0" fitWidth="584.0" layoutX="-19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -23,7 +23,7 @@
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <Label fx:id="balance" layoutX="61.0" layoutY="168.0" text="INITIAL BALANCE">
+      <Label fx:id="balance" layoutX="61.0" layoutY="168.0" text="Reload Amount">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
@@ -36,8 +36,8 @@
             <Font name="System Bold" size="12.0" />
          </font></Label>
       <Button fx:id="Cancel" layoutX="231.0" layoutY="262.0" mnemonicParsing="false" onAction="#Cancel" text="CANCEL" />
-      <Button fx:id="Buy" layoutX="321.0" layoutY="262.0" mnemonicParsing="false" onAction="#WRITE" text="BUY" />
-      <Label fx:id="thanks" layoutX="193.0" layoutY="290.0" prefHeight="17.0" prefWidth="38.0" />
+      <Button fx:id="Buy" layoutX="321.0" layoutY="262.0" mnemonicParsing="false" onAction="#Reload" text="Reload" />
+      <Label fx:id="thanks" layoutX="183.0" layoutY="290.0" prefHeight="17.0" prefWidth="43.0" />
       <Button fx:id="Back" layoutX="14.0" layoutY="295.0" mnemonicParsing="false" onAction="#Back" text="Back" />
    </children>
 </AnchorPane>

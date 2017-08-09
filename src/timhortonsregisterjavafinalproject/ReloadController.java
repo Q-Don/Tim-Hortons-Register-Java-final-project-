@@ -27,15 +27,15 @@ import javafx.scene.control.TextField;
  *
  * @author Simarpreet Kaur, Quardin Lyttle
  */
-public class NewCardController implements Initializable
+public class ReloadController implements Initializable
 {
 
     @FXML 
-    public Button Buy;
+    private Button Buy;
+    @FXML
+    private Button Back;
      @FXML 
     private Button Cancel;
-     @FXML
-     private Button Back;
     @FXML 
     private Label lname;
     @FXML 
@@ -43,7 +43,7 @@ public class NewCardController implements Initializable
     @FXML 
     private Label emailID;
     @FXML 
-    public Label balance;
+    private Label balance;
     @FXML
     private Label thanks;
     @FXML 
@@ -87,7 +87,7 @@ public class NewCardController implements Initializable
    @FXML
    public void Cancel(ActionEvent event)
    {
-       TimHortonsRegisterJavaFinalProject.newCardStage.close();
+       TimHortonsRegisterJavaFinalProject.reloadStage.close();
        txtfname.clear();
        txtlname.clear();
        txtemail.clear();
@@ -95,7 +95,8 @@ public class NewCardController implements Initializable
        
    }
 
-   public void Reload()
+   @FXML
+   public void Reload(ActionEvent event)
    {
        
        double reload = Double.parseDouble(balance.getText());
@@ -103,8 +104,7 @@ public class NewCardController implements Initializable
         Scanner scan;
 
         try
-            {
-                int i =1;
+            {                
                 scan=new Scanner(data);
                 scan.useDelimiter(System.getProperty("line.separator"));
                 while(scan.hasNext())
@@ -144,9 +144,12 @@ public class NewCardController implements Initializable
    {
        TimHortonsRegisterJavaFinalProject.LaunchTimCard();
    }
+  
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+    public void initialize(URL url, ResourceBundle rb) 
+    {
+       Buy.setText("Reload");
+       balance.setText("RELOAD AMOUNT");
     }    
     
 }

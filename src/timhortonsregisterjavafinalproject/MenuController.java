@@ -139,7 +139,7 @@ public class MenuController implements Initializable
              total = cost.get(i)+total;
          }
          screen.appendText("------------------------------------------------------\n");
-         screen.appendText("\t\t\t\t\t\t\tTotal: $"+total);
+         screen.appendText("\t\t\t\t\t\t\tTotal: $"+total+"\n\n");
          fTotal = total;
      }
    
@@ -380,6 +380,8 @@ public class MenuController implements Initializable
         screen.appendText("________________________________________________________\n");
         order.removeAll(order);
         cost.removeAll(cost);
+        txt1.clear();
+        txt2.clear();
        
    }
    
@@ -481,23 +483,28 @@ public class MenuController implements Initializable
                                 String lname = sc.next();
                                 double inibal = sc.nextDouble();
 
-                                if(inibal<=fTotal)
+                                if(inibal>=fTotal)
                                 {
                                     inibal=inibal-fTotal;
                                     screen.appendText("\nPayment successful. Your new balance is: $"+inibal);
-                                    screen.appendText("\nName: "+fname+" "+lname+"\nEmail:"+email);
+                                    screen.appendText("\nName: "+fname+" "+lname+"\nEmail: "+email+"\n");
                                     i=0;
 
                                 }
-                                else
+                                else if(fTotal>inibal)
                                 {
-                                    screen.appendText("Insuffucient funds on Tim Card");
+                                    screen.appendText("Insuffucient funds on Tim Card\n");
+                                    i=2;
                                 }
                             }
                         }
                         if(i==1)
                         {
-                            screen.appendText("Please Register a Tim Card if you wish to use these services.");
+                            screen.appendText("Please Register a Tim Card if you wish to use these services.\n");
+                        }
+                        else if(i==2)
+                        {
+                            screen.appendText("Please Reload Card.\n");
                         }
                         scan.close();
 
@@ -518,13 +525,13 @@ public class MenuController implements Initializable
             }
          else
            {
-               screen.appendText("PLEASE ENTER SECOND VALUE");
+               screen.appendText("PLEASE ENTER SECOND VALUE\n");
            }
        }
        else
        {
-           screen.appendText("PLEASE ENTER VALUES");
-           screen.appendText("PLEASE TOTAL BEFORE PURCHASE");
+           screen.appendText("PLEASE ENTER VALUES\n");
+           screen.appendText("PLEASE TOTAL BEFORE PURCHASE\n");
        }
        
    }  
