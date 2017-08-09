@@ -62,7 +62,7 @@ public class BalanceController implements Initializable
                    String lname = sc.next();
                    double inibal = sc.nextDouble();
                    
-                   tarea.appendText("\n Your Email:"+email+"\n Name: "+fname+ " "+ lname+"\n Your Balance: "+inibal);
+                   tarea.appendText("\n Your Email: "+email+"\n Name: "+fname+ " "+ lname+"\n Your Balance: $"+inibal);
                }
            }
            scan.close();

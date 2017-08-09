@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -17,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="632.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timhortonsregisterjavafinalproject.MenuController">
+<AnchorPane id="AnchorPane" prefHeight="632.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timhortonsregisterjavafinalproject.MenuController">
    <children>
       <TabPane prefHeight="636.0" prefWidth="674.0" style="-fx-background-color: #c22400;" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -65,7 +60,7 @@
                               <Image url="@../Menu%20Items/coffee/hot-chocolate.png" />
                            </image>
                         </ImageView>
-                        <Button fx:id="hotchocolate" layoutX="510.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOT CHOCOLATE" textFill="WHITE">
+                        <Button fx:id="hotchocolate" layoutX="510.0" layoutY="186.0" mnemonicParsing="false" onAction="#HotChocolate" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOT CHOCOLATE" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
@@ -85,7 +80,7 @@
                               <Image url="@../Menu%20Items/coffee/decaf-blend-product-us.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="hotchocolate" fitHeight="191.0" fitWidth="126.0" layoutX="523.0" layoutY="201.0" onDragDetected="#HotChocolate" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="191.0" fitWidth="126.0" layoutX="523.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Menu%20Items/coffee/specialty-tea.png" />
                            </image>
@@ -145,7 +140,7 @@
                               <Font name="Arial Black" size="13.0" />
                            </font>
                         </Button>
-                        <Button fx:id="smoothie" layoutX="523.0" layoutY="563.0" mnemonicParsing="false" onAction="#ss" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="FRUIT SMOOTHIE" textFill="WHITE">
+                        <Button fx:id="smoothie" layoutX="523.0" layoutY="563.0" mnemonicParsing="false" onAction="#Smoothie" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="FRUIT SMOOTHIE" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
@@ -167,7 +162,7 @@
                               <Image url="@../Menu%20Items/snacks/cookies-product.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="237.0" fitWidth="162.0" layoutX="392.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="237.0" fitWidth="162.0" layoutX="387.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Menu%20Items/snacks/donuts-product.png" />
                            </image>
@@ -209,7 +204,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ImageView fitHeight="646.0" fitWidth="844.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="646.0" fitWidth="844.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Images/tim-hortons2.gif" />
                            </image>
@@ -219,44 +214,29 @@
                               <Image url="@../Menu%20Items/breakfast/bagel-belt-product.png" />
                            </image>
                         </ImageView>
-                        <Button fx:id="begalbelt" layoutX="113.0" layoutY="185.0" mnemonicParsing="false" onAction="#Bagelbelt" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="BEGAL BELT" textFill="WHITE">
-                           <font>
-                              <Font name="Arial Black" size="13.0" />
-                           </font>
-                        </Button>
                         <ImageView fitHeight="235.0" fitWidth="162.0" layoutX="103.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Menu%20Items/breakfast/breakfast-snacks-product.png" />
                            </image>
                         </ImageView>
-                        <Button fx:id="snacks" layoutX="83.0" layoutY="353.0" mnemonicParsing="false" onAction="#Snacks" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="BREAKFAST SNACKS" textFill="WHITE">
-                           <font>
-                              <Font name="Arial Black" size="13.0" />
-                           </font>
-                        </Button>
                         <ImageView fitHeight="225.0" fitWidth="238.0" layoutX="106.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Menu%20Items/breakfast/Grilled-Sausage-Breakfast-Wrap_CAN_2017.png" />
                            </image>
                         </ImageView>
-                        <Button fx:id="wrap" layoutX="74.0" layoutY="529.0" mnemonicParsing="false" onAction="#Wrap" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="GRILLED SAUSAGE WRAP" textFill="WHITE">
-                           <font>
-                              <Font name="Arial Black" size="13.0" />
-                           </font>
-                        </Button>
                         <ImageView fitHeight="248.0" fitWidth="176.0" layoutX="422.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Menu%20Items/breakfast/homestyle-hash-brown-product.png" />
                            </image>
                         </ImageView>
-                        <Button fx:id="hashbrown" layoutX="401.0" layoutY="185.0" mnemonicParsing="false" onAction="#Hashbrown" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOMESTYLE HASH BROWN" textFill="WHITE">
-                           <font>
-                              <Font name="Arial Black" size="13.0" />
-                           </font>
-                        </Button>
                         <ImageView fitHeight="194.0" fitWidth="141.0" layoutX="430.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Menu%20Items/breakfast/homestyle-oatmeal-product.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="197.0" fitWidth="196.0" layoutX="437.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/breakfast/hot-breakfast-sandwich-product.png" />
                            </image>
                         </ImageView>
                         <Button fx:id="oatmeal" layoutX="414.0" layoutY="353.0" mnemonicParsing="false" onAction="#Oatmeal" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOMESTYLE OATMEAL" textFill="WHITE">
@@ -264,12 +244,27 @@
                               <Font name="Arial Black" size="13.0" />
                            </font>
                         </Button>
-                        <ImageView fitHeight="197.0" fitWidth="196.0" layoutX="437.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../Menu%20Items/breakfast/hot-breakfast-sandwich-product.png" />
-                           </image>
-                        </ImageView>
                         <Button fx:id="sandwich" layoutX="417.0" layoutY="529.0" mnemonicParsing="false" onAction="#Sandwich" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOT BREAKFAST SANDWICH" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bagelbelt" layoutX="113.0" layoutY="185.0" mnemonicParsing="false" onAction="#Bagelbelt" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="BAGEL BELT" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="snacks" layoutX="83.0" layoutY="353.0" mnemonicParsing="false" onAction="#Snacks" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="BREAKFAST SNACKS" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="wrap" layoutX="74.0" layoutY="529.0" mnemonicParsing="false" onAction="#Wrap" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="GRILLED SAUSAGE WRAP" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="hashbrown" layoutX="401.0" layoutY="185.0" mnemonicParsing="false" onAction="#Hashbrown" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOMESTYLE HASH BROWN" textFill="WHITE">
                            <font>
                               <Font name="Arial Black" size="13.0" />
                            </font>
@@ -282,16 +277,16 @@
       <TextArea fx:id="screen" layoutX="686.0" layoutY="81.0" prefHeight="399.0" prefWidth="331.0" />
       <Button fx:id="cancel" layoutX="699.0" layoutY="491.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
       <Button fx:id="total" layoutX="762.0" layoutY="491.0" mnemonicParsing="false" onAction="#Total" text="Total" />
-      <ComboBox fx:id="payment" layoutX="843.0" layoutY="491.0" prefHeight="25.0" prefWidth="162.0" promptText="Method of Payment " />
+      <ComboBox fx:id="payment" layoutX="843.0" layoutY="491.0" onAction="#Pay" prefHeight="25.0" prefWidth="162.0" promptText="Method of Payment " />
       <Label layoutX="726.0" layoutY="28.0" text="Current Order">
          <font>
             <Font size="36.0" />
          </font></Label>
-      <Button layoutX="948.0" layoutY="597.0" mnemonicParsing="false" text="Purchase" />
-      <TextField layoutX="837.0" layoutY="532.0" />
-      <TextField layoutX="837.0" layoutY="561.0" />
-      <Label layoutX="762.0" layoutY="536.0" text="Label" />
-      <Label layoutX="762.0" layoutY="565.0" text="Label" />
+      <Button fx:id="purchase" layoutX="948.0" layoutY="597.0" mnemonicParsing="false" onAction="#Purchase" text="Purchase" />
+      <TextField fx:id="txt1" layoutX="890.0" layoutY="532.0" prefHeight="25.0" prefWidth="127.0" />
+      <TextField fx:id="txt2" layoutX="890.0" layoutY="561.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label fx:id="lbl1" layoutX="762.0" layoutY="536.0" text="Label" />
+      <Label fx:id="lbl2" layoutX="762.0" layoutY="565.0" text="Label" />
       <Button fx:id="back" layoutX="706.0" layoutY="597.0" mnemonicParsing="false" onAction="#Back" text="Back" />
    </children>
 </AnchorPane>
