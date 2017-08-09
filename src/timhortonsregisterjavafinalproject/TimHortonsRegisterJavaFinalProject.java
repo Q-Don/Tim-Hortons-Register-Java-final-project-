@@ -60,7 +60,8 @@ public class TimHortonsRegisterJavaFinalProject extends Application
     {
         timCardStage.show();
         registerStage.hide();
-        menuStage.hide();
+        menuStage.hide(); balanceStage.hide();
+        reloadStage.hide();
     }
     
     public static void LaunchRegister()
@@ -68,7 +69,8 @@ public class TimHortonsRegisterJavaFinalProject extends Application
         registerStage.show();
         timCardStage.hide();
         menuStage.hide();
-        newCardStage.hide();
+        newCardStage.hide(); balanceStage.hide();
+        reloadStage.hide();
     }
     
     public static void LaunchMenu()
