@@ -145,20 +145,124 @@
           </Tab>
           <Tab text="Snacks">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="386.0" prefWidth="600.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="386.0" prefWidth="600.0">
+                     <children>
+                        <ImageView fitHeight="251.0" fitWidth="230.0" layoutX="76.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/snacks/cookies-product.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="237.0" fitWidth="162.0" layoutX="392.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/snacks/donuts-product.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="210.0" fitWidth="162.0" layoutX="89.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/snacks/muffins-product.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="219.0" fitWidth="185.0" layoutX="398.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/snacks/timbits-product.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="french1" layoutX="434.0" layoutY="513.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="TIMBITS" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="french2" layoutX="112.0" layoutY="513.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="MUFFINS" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="french3" layoutX="111.0" layoutY="251.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="COOKIES" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="french4" layoutX="425.0" layoutY="251.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="DONUTS" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
             </content>
           </Tab>
             <Tab text="Breakfast">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="220.0" fitWidth="289.0" layoutX="88.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/breakfast/bagel-belt-product.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="french5" layoutX="113.0" layoutY="185.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="BEGAL BELT" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="235.0" fitWidth="162.0" layoutX="96.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/breakfast/breakfast-snacks-product.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="french6" layoutX="83.0" layoutY="353.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="BREAKFAST SNACKS" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="225.0" fitWidth="238.0" layoutX="106.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/breakfast/Grilled-Sausage-Breakfast-Wrap_CAN_2017.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="french7" layoutX="74.0" layoutY="529.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="GRILLED SAUSAGE WRAP" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="248.0" fitWidth="176.0" layoutX="422.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/breakfast/homestyle-hash-brown-product.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="french8" layoutX="401.0" layoutY="185.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOMESTYLE HASH BROWN" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="194.0" fitWidth="141.0" layoutX="430.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/breakfast/homestyle-oatmeal-product.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="french9" layoutX="414.0" layoutY="353.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOMESTYLE OATMEAL" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="197.0" fitWidth="196.0" layoutX="437.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Menu%20Items/breakfast/hot-breakfast-sandwich-product.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="french10" layoutX="417.0" layoutY="529.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-image: url(..\Menu Items\coffee\french vanilla.png);" text="HOT BREAKFAST SANDWICH" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
               </content>
             </Tab>
         </tabs>
       </TabPane>
       <TextArea fx:id="screen" layoutX="686.0" layoutY="81.0" prefHeight="399.0" prefWidth="331.0" />
       <Button fx:id="cancel" layoutX="699.0" layoutY="491.0" mnemonicParsing="false" text="Cancel" />
-      <Button layoutX="762.0" layoutY="491.0" mnemonicParsing="false" text="Button" />
-      <ComboBox layoutX="843.0" layoutY="491.0" prefHeight="25.0" prefWidth="162.0" promptText="Method of Payment " />
+      <Button fx:id="total" layoutX="762.0" layoutY="491.0" mnemonicParsing="false" text="Total" />
+      <ComboBox fx:id="payment" layoutX="843.0" layoutY="491.0" prefHeight="25.0" prefWidth="162.0" promptText="Method of Payment " />
       <Label layoutX="726.0" layoutY="28.0" text="Current Order">
          <font>
             <Font size="36.0" />
