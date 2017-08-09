@@ -21,6 +21,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 /**
@@ -47,49 +48,19 @@ public class ReloadController implements Initializable
     @FXML
     private Label thanks;
     @FXML 
-    private TextField txtfname;
-    @FXML 
-    private TextField txtlname;
+    private TextArea screen;
    @FXML 
     private TextField txtemail;
    @FXML 
     private TextField txtinibal;
    
    File data = new File("src/Tim Card Data/timCardData.txt");
-    @FXML
-    private void WRITE(ActionEvent event) throws IOException
-    {
-       PrintWriter output;
-       String firstname=txtfname.getText();
-       String lastname=txtlname.getText();
-       String email=txtemail.getText();
-       double intialbalance =Double.parseDouble(txtinibal.getText());
-     
-         try
-         {
-         output = new PrintWriter(new BufferedWriter(new FileWriter(data,true)));
-         output.println(email+","+firstname+","+lastname+","+intialbalance);
-         output.close();
-         }
-         catch(Exception e)
-                 {
-                 System.out.println("file not found-write");
-                 }
-         
-         txtemail.clear();
-         txtlname.clear();
-         txtfname.clear();
-         txtinibal.clear();
-         thanks.setText("Tim Card Successfully Registered!");
-         
-    }
+
    
    @FXML
    public void Cancel(ActionEvent event)
    {
        TimHortonsRegisterJavaFinalProject.reloadStage.close();
-       txtfname.clear();
-       txtlname.clear();
        txtemail.clear();
        txtinibal.clear();
        
@@ -99,7 +70,7 @@ public class ReloadController implements Initializable
    public void Reload(ActionEvent event)
    {
        
-       double reload = Double.parseDouble(balance.getText());
+       double reload = Double.parseDouble(txtinibal.getText());
         String email = txtemail.getText();
         Scanner scan;
 
@@ -118,7 +89,7 @@ public class ReloadController implements Initializable
                         String lname = sc.next();
                         double inibal = sc.nextDouble();     
                         reload = reload+inibal;
-                        thanks.setText("Reload Successful. New Amount= $"+reload);
+                        screen.setText("Reload Successful.\nNew Amount= $"+reload);
                     }
                 }
 
