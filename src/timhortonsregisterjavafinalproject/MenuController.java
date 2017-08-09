@@ -210,6 +210,14 @@ public class MenuController implements Initializable
         
          
      }
+     
+      @FXML
+   public void Cancel(ActionEvent event)
+   {
+           screen.clear();
+       
+   }
+  
  
     @Override
     public void initialize(URL url, ResourceBundle rb)
