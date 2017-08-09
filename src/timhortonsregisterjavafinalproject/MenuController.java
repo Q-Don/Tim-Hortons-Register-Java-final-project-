@@ -85,8 +85,8 @@ public class MenuController implements Initializable
          {
              total = cost.get(i)+total;
          }
-         screen.appendText("--------------------------------\n");
-         screen.appendText("\t\t\t\t"+total);
+         screen.appendText("------------------------------------------------------\n");
+         screen.appendText("\t\t\t\t\t\t\tTotal: $"+total);
      }
      
      @FXML
@@ -94,7 +94,7 @@ public class MenuController implements Initializable
      {
          double cost =1.30;
          String name = "French Vanilla";
-         screen.appendText(name+"\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -104,7 +104,7 @@ public class MenuController implements Initializable
      {
          double cost =1.60;
          String name = "Cappauccino";
-         screen.appendText(name+"\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -114,7 +114,7 @@ public class MenuController implements Initializable
      {
          double cost =1.45;
          String name = "Latte";
-         screen.appendText(name+"\t\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -124,7 +124,7 @@ public class MenuController implements Initializable
      {
          double cost =1.50;
          String name = "Hot Chocolate";
-         screen.appendText(name+"\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -134,7 +134,7 @@ public class MenuController implements Initializable
      {
          double cost =1.00;
          String name = "Orignal Blend";
-         screen.appendText(name+"\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -144,7 +144,7 @@ public class MenuController implements Initializable
      {
          double cost =1.10;
          String name = "Dark Roast";
-         screen.appendText(name+"\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -154,7 +154,7 @@ public class MenuController implements Initializable
      {
          double cost =1.15;
          String name = "Decaf";
-         screen.appendText(name+"\t\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -164,7 +164,7 @@ public class MenuController implements Initializable
      {
          double cost =1.70;
          String name = "Tea";
-         screen.appendText(name+"\t\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -174,7 +174,7 @@ public class MenuController implements Initializable
      {
          double cost =2.10;
          String name = "Iced Capp";
-         screen.appendText(name+"\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -184,7 +184,7 @@ public class MenuController implements Initializable
      {
          double cost =1.90;
          String name = "Iced Coffee";
-         screen.appendText(name+"\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -195,7 +195,7 @@ public class MenuController implements Initializable
      {
          double cost =2.45;
          String name = "Frozen Lemonade";
-         screen.appendText(name+"\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
          
      }
@@ -205,15 +205,17 @@ public class MenuController implements Initializable
      {
          double cost =2.45;
          String name = "Fruit Smoothie";
-         screen.appendText(name+"\t\t\t"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
          OrderList(name,cost);
+        
          
      }
  
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-        screen.setText("Item \t\t\t\t Cost");
+        screen.setText("Item \t\t\t\t\t\t\t Cost\n");
+        screen.appendText("________________________________________________________\n");
         screen.setEditable(false);
         
     }    
