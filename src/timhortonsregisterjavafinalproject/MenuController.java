@@ -29,7 +29,7 @@ public class MenuController implements Initializable
      private Button cancel;
      @FXML
      private Button total;
-     
+     /////////////////////////////////
      @FXML
      private Button french;
      @FXML
@@ -54,6 +54,33 @@ public class MenuController implements Initializable
      private Button lemonade;
      @FXML
      private Button smoothie;
+     
+     ///////////////////////////////////////
+     @FXML
+     private Button cookies;
+     @FXML
+     private Button donuts;
+     @FXML
+     private Button muffins;
+     @FXML
+     private Button timbits;
+     
+     ///////////////////////////////////////
+     
+     @FXML
+     private Button begalbelt;
+     @FXML
+     private Button hashbrown;
+     @FXML
+     private Button snacks;
+     @FXML
+     private Button oatmeal;
+     @FXML
+     private Button wrap;
+     @FXML
+     private Button sandwich;
+     
+     //////////////////////////////////////
      @FXML
      private TextArea screen;
      @FXML
@@ -88,7 +115,8 @@ public class MenuController implements Initializable
          screen.appendText("------------------------------------------------------\n");
          screen.appendText("\t\t\t\t\t\t\tTotal: $"+total);
      }
-     
+   
+     ///////////////////////////////////////////////////////
      @FXML
      private void French(ActionEvent event)
      {
@@ -210,7 +238,113 @@ public class MenuController implements Initializable
         
          
      }
+     ///////////////////////////////////////////////////////
+      @FXML
+     private void Cookies(ActionEvent event)
+     {
+         double cost =1.00;
+         String name = "Cookie";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
+
+      @FXML
+     private void Donuts(ActionEvent event)
+     {
+         double cost =0.60;
+         String name = "Donut";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
+
+      @FXML
+     private void Muffins(ActionEvent event)
+     {
+         double cost =.90;
+         String name = "Muffin";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
+
+   
+      @FXML
+     private void Timbits(ActionEvent event)
+     {
+         double cost =0.50;
+         String name = "Timbit";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
+     /////////////////////////////////////////////////////////
+ @FXML
+     private void Begalbelt(ActionEvent event)
+     {
+         double cost =2.30;
+         String name = "Begal Belt";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
      
+      @FXML
+     private void Hashbrown(ActionEvent event)
+     {
+         double cost =2.50;
+         String name = "Homestyle Hash Brown";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
+
+      @FXML
+     private void Snacks(ActionEvent event)
+     {
+         double cost =1.50;
+         String name = "Breakfast Snacks";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
+
+     
+      @FXML
+     private void Oatmeal(ActionEvent event)
+     {
+         double cost =2.00;
+         String name = "Homestyle Oatmeal";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
+
+     
+      @FXML
+     private void Wrap(ActionEvent event)
+     {
+         double cost =3.00;
+         String name = "Grilled Sausage Wrap";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
+
+
+      @FXML
+     private void Sandwich(ActionEvent event)
+     {
+         double cost =2.70;
+         String name = "Hot Breakfast Sandwich";
+         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         OrderList(name,cost);
+         
+     }
+
+     
+    ///////////////////////////////////////////////////////// 
       @FXML
    public void Cancel(ActionEvent event)
    {
