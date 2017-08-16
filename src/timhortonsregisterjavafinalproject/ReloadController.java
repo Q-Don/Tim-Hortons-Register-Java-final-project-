@@ -120,7 +120,7 @@ public class ReloadController implements Initializable
                 br.close();
                 
                 PrintWriter output;
-                output = new PrintWriter(new BufferedWriter(new FileWriter(data,true)));
+                output = new PrintWriter(new BufferedWriter(new FileWriter(data,false)));
                 for(String s : info)
                 {
                     output.write(s);
