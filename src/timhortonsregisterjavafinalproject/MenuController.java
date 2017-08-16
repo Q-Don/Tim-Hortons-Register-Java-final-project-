@@ -7,8 +7,11 @@ Sheridan College
 package timhortonsregisterjavafinalproject;
 
 import java.io.File;
+import java.io.PrintWriter;
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 import javafx.collections.FXCollections;
@@ -19,6 +22,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -103,14 +107,20 @@ public class MenuController implements Initializable
      private TextField txt1;
      @FXML
      private TextField txt2;
-     
+     @FXML
+     private CheckBox ReceiptSelect;
+             
      ArrayList<String> order = new ArrayList<>();
      ArrayList<Double> cost = new ArrayList<>();
      ArrayList<String> methodpay = new ArrayList<>();
      ObservableList<String> payments= FXCollections.observableArrayList(methodpay);
+     ArrayList<String> receipt = new ArrayList<>();
+     private int ordernum = 0;
      
     private Double fTotal = 0.0;
     File data = new File("src/Tim Card Data/timCardData.txt");
+    
+    DecimalFormat df = new DecimalFormat("#.00");
      
 
      
@@ -139,7 +149,7 @@ public class MenuController implements Initializable
              total = cost.get(i)+total;
          }
          screen.appendText("------------------------------------------------------\n");
-         screen.appendText("\t\t\t\t\t\t\tTotal: $"+total+"\n\n");
+         screen.appendText("\t\t\t\t\t\t\tTotal: $"+df.format(total)+"\n\n");
          fTotal = total;
      }
    
@@ -149,7 +159,7 @@ public class MenuController implements Initializable
      {
          double cost =1.30;
          String name = "French Vanilla";
-         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -159,7 +169,7 @@ public class MenuController implements Initializable
      {
          double cost =1.60;
          String name = "Cappauccino";
-         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -169,7 +179,7 @@ public class MenuController implements Initializable
      {
          double cost =1.45;
          String name = "Latte";
-         screen.appendText(name+"\t\t\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -179,7 +189,7 @@ public class MenuController implements Initializable
      {
          double cost =1.50;
          String name = "Hot Chocolate";
-         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -189,7 +199,7 @@ public class MenuController implements Initializable
      {
          double cost =1.00;
          String name = "Orignal Blend";
-         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -199,7 +209,7 @@ public class MenuController implements Initializable
      {
          double cost =1.10;
          String name = "Dark Roast";
-         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -209,7 +219,7 @@ public class MenuController implements Initializable
      {
          double cost =1.15;
          String name = "Decaf";
-         screen.appendText(name+"\t\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -219,7 +229,7 @@ public class MenuController implements Initializable
      {
          double cost =1.70;
          String name = "Tea";
-         screen.appendText(name+"\t\t\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -229,7 +239,7 @@ public class MenuController implements Initializable
      {
          double cost =2.10;
          String name = "Iced Capp";
-         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -239,7 +249,7 @@ public class MenuController implements Initializable
      {
          double cost =1.90;
          String name = "Iced Coffee";
-         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -250,7 +260,7 @@ public class MenuController implements Initializable
      {
          double cost =2.45;
          String name = "Frozen Lemonade";
-         screen.appendText(name+"\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -260,7 +270,7 @@ public class MenuController implements Initializable
      {
          double cost =2.45;
          String name = "Fruit Smoothie";
-         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
         
          
@@ -271,7 +281,7 @@ public class MenuController implements Initializable
      {
          double cost =1.00;
          String name = "Cookie";
-         screen.appendText(name+"\t\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -281,7 +291,7 @@ public class MenuController implements Initializable
      {
          double cost =0.60;
          String name = "Donut";
-         screen.appendText(name+"\t\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -291,7 +301,7 @@ public class MenuController implements Initializable
      {
          double cost =0.90;
          String name = "Muffin";
-         screen.appendText(name+"\t\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -302,7 +312,7 @@ public class MenuController implements Initializable
      {
          double cost =0.50;
          String name = "Timbits";
-         screen.appendText(name+"\t\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -312,7 +322,7 @@ public class MenuController implements Initializable
      {
          double cost =2.30;
          String name = "Begal Belt";
-         screen.appendText(name+"\t\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -322,7 +332,7 @@ public class MenuController implements Initializable
      {
          double cost =2.50;
          String name = "Homestyle Hash Brown";
-         screen.appendText(name+"\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -332,7 +342,7 @@ public class MenuController implements Initializable
      {
          double cost =1.50;
          String name = "Breakfast Snacks";
-         screen.appendText(name+"\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -343,7 +353,7 @@ public class MenuController implements Initializable
      {
          double cost =2.00;
          String name = "Homestyle Oatmeal";
-         screen.appendText(name+"\t\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -354,7 +364,7 @@ public class MenuController implements Initializable
      {
          double cost =3.00;
          String name = "Grilled Sausage Wrap";
-         screen.appendText(name+"\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -365,7 +375,7 @@ public class MenuController implements Initializable
      {
          double cost =2.70;
          String name = "Hot Breakfast Sandwich";
-         screen.appendText(name+"\t\t\t\t$"+cost+"\n");
+         screen.appendText(name+"\t\t\t\t$"+df.format(cost)+"\n");
          OrderList(name,cost);
          
      }
@@ -428,8 +438,11 @@ public class MenuController implements Initializable
                 Double cash = Double.parseDouble(txt1.getText());
                 if((cash-fTotal)>=0&&fTotal>0)
                     {
-                    screen.appendText("\nCash: $"+cash);
-                    screen.appendText("\nChange: $"+(cash-fTotal));
+                    screen.appendText("\nCash: $"+df.format(cash));
+                    screen.appendText("\nChange: $"+df.format((cash-fTotal)));
+                    ordernum++;
+                    receipt.add("Order#"+ordernum);
+                    Receipt();
                     }
                 else
                     {
@@ -449,17 +462,23 @@ public class MenuController implements Initializable
            else if(payment.getValue().toString()=="Credit Card"&&txt2.getText()!=null)
                {
                    screen.appendText("\n Transaction Complete");
-                   screen.appendText("\n$"+fTotal+"was charged to your card.");
+                   screen.appendText("\n$"+df.format(fTotal)+"was charged to your card.");
                    screen.appendText("\nCard Number:"+txt1.getText());
                    screen.appendText("\nName on Card:"+txt2.getText());
+                   ordernum++;
+                   receipt.add("Order#"+ordernum);
+                   Receipt();
                }
 
            else if(payment.getValue().toString()=="Debit Card"&&txt2.getText()!=null)
                {
                    screen.appendText("\n Transaction Complete");
-                   screen.appendText("\n$"+fTotal+"was charged to your card.");
+                   screen.appendText("\n$"+df.format(fTotal)+"was charged to your card.");
                    screen.appendText("\nCard Number:"+txt1.getText());
                    screen.appendText("\nName on Card:"+txt2.getText());
+                   ordernum++;
+                   receipt.add("Order#"+ordernum);
+                   Receipt();
                }
            else if(payment.getValue().toString()=="Tim Card"&&txt2.getText()!=null)
             {
@@ -489,6 +508,9 @@ public class MenuController implements Initializable
                                     screen.appendText("\nPayment successful. Your new balance is: $"+inibal);
                                     screen.appendText("\nName: "+fname+" "+lname+"\nEmail: "+email+"\n");
                                     i=0;
+                                    ordernum++;
+                                    receipt.add("Order#"+ordernum);
+                                    Receipt();
 
                                 }
                                 else if(fTotal>inibal)
@@ -536,6 +558,34 @@ public class MenuController implements Initializable
        
    }  
    
+
+   private void Receipt()
+   {
+      boolean t = false;
+      t = ReceiptSelect.isSelected();
+      if(t)
+      {
+          File receipts = new File("src/Receipts/"+receipt.get((ordernum-1))+".txt");
+          try
+          {
+              Date date = new Date();
+              PrintWriter pr = new PrintWriter(receipts);
+              pr.print("\t\t\tOrder #"+ordernum+"\n\n");
+              pr.print(date.toString()+"\n\n");
+              pr.print(screen.getText());
+              pr.close();
+          }
+          catch(Exception e)
+          {
+              System.out.println("File not found");
+          }
+      }
+      else
+      {
+          System.out.println("No recipt requested");
+      }
+       
+   }
   
  
     @Override

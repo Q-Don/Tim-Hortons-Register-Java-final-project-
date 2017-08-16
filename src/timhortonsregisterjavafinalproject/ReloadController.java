@@ -6,12 +6,15 @@ Sheridan College
  */
 package timhortonsregisterjavafinalproject;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 import javafx.event.ActionEvent;
@@ -69,10 +72,17 @@ public class ReloadController implements Initializable
    @FXML
    public void Reload(ActionEvent event)
    {
-       
+
        double reload = Double.parseDouble(txtinibal.getText());
         String email = txtemail.getText();
         Scanner scan;
+        ArrayList<String> info = new ArrayList<>();
+        String line = null;
+        String fname;      
+        String lname;
+        double inibal = 0;     
+
+        
 
         try
             {                
@@ -85,15 +95,41 @@ public class ReloadController implements Initializable
                     if(sc.next().equalsIgnoreCase(email))
                     {
 
-                        String fname = sc.next();       
-                        String lname = sc.next();
-                        double inibal = sc.nextDouble();     
+                        fname = sc.next();       
+                        lname = sc.next();
+                        inibal = sc.nextDouble();     
                         reload = reload+inibal;
+                        
                         screen.setText("Reload Successful.\nNew Amount= $"+reload);
                     }
                 }
 
                 scan.close();
+                
+                FileReader fr = new FileReader(data);
+                BufferedReader br = new BufferedReader(fr);
+                while((line = br.readLine()) != null)
+                {
+                    if(line.contains(email))
+                    {
+                        line = line.replace(String.valueOf(inibal),String.valueOf(reload));
+                    }
+                    info.add(line);
+                }
+                fr.close();
+                br.close();
+                
+                FileWriter fw = new FileWriter(data);
+                BufferedWriter out = new BufferedWriter(fw);
+                for(String s : info)
+                {
+                    out.write(s);
+                    out.write("\n");
+                }
+                out.flush();
+                out.close();
+                
+                
 
             }
         catch(Exception e)
@@ -109,6 +145,7 @@ public class ReloadController implements Initializable
 
                     });
             }
+       
    }
    @FXML
    public void Back(ActionEvent event)

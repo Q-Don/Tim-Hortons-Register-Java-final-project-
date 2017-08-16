@@ -59,30 +59,30 @@ public class TimHortonsRegisterJavaFinalProject extends Application
     public static void LaunchTimCard()
     {
         timCardStage.show();
-        registerStage.hide();
-        menuStage.hide(); 
-        balanceStage.hide();
-        reloadStage.hide();
-        newCardStage.hide();
+        registerStage.close();
+        menuStage.close(); 
+        balanceStage.close();
+        reloadStage.close();
+        newCardStage.close();
     }
     
     public static void LaunchRegister()
     {
         registerStage.show();
-        timCardStage.hide();
+        timCardStage.close();
         menuStage.hide();
-        newCardStage.hide(); balanceStage.hide();
-        reloadStage.hide();
+        newCardStage.close(); balanceStage.close();
+        reloadStage.close();
     }
     
     public static void LaunchMenu()
     {
         menuStage.show();
-        registerStage.hide();
-        timCardStage.hide();
-        newCardStage.hide();
-        balanceStage.hide();
-        reloadStage.hide();
+        registerStage.close();
+        timCardStage.close();
+        newCardStage.close();
+        balanceStage.close();
+        reloadStage.close();
     }
             
             
