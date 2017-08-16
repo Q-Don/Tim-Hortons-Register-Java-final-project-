@@ -119,15 +119,15 @@ public class ReloadController implements Initializable
                 fr.close();
                 br.close();
                 
-                FileWriter fw = new FileWriter(data);
-                BufferedWriter out = new BufferedWriter(fw);
+                PrintWriter output;
+                output = new PrintWriter(new BufferedWriter(new FileWriter(data,true)));
                 for(String s : info)
                 {
-                    out.write(s);
-                    out.write("\n");
+                    output.write(s);
+                    output.write("\n");
                 }
-                out.flush();
-                out.close();
+                output.flush();
+                output.close();
                 
                 
 
@@ -144,6 +144,7 @@ public class ReloadController implements Initializable
                         a.close();
 
                     });
+                e.printStackTrace();
             }
        
    }

@@ -6,6 +6,7 @@
 package timhortonsregisterjavafinalproject;
 
 import java.io.File;
+import java.io.FileReader;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Scanner;
@@ -54,7 +55,8 @@ public class BalanceController implements Initializable
            scan=new Scanner(data);
            scan.useDelimiter(System.getProperty("line.separator"));
            while(scan.hasNext())
-           {
+           {    
+//               FileReader read = new FileReader(data);
                Scanner sc=new Scanner(scan.next());
                sc.useDelimiter(",");
                if(sc.next().equalsIgnoreCase(email))

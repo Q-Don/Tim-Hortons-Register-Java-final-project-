@@ -37,7 +37,7 @@
          </font></Label>
       <Button fx:id="Cancel" layoutX="231.0" layoutY="262.0" mnemonicParsing="false" onAction="#Cancel" text="CANCEL" />
       <Button fx:id="Buy" layoutX="321.0" layoutY="262.0" mnemonicParsing="false" onAction="#WRITE" text="BUY" />
-      <Label fx:id="thanks" layoutX="193.0" layoutY="290.0" prefHeight="17.0" prefWidth="38.0" />
+      <Label fx:id="thanks" layoutX="82.0" layoutY="299.0" prefHeight="17.0" prefWidth="296.0" />
       <Button fx:id="Back" layoutX="14.0" layoutY="295.0" mnemonicParsing="false" onAction="#Back" text="Back" />
    </children>
 </AnchorPane>

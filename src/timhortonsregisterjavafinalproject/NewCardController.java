@@ -143,6 +143,7 @@ public class NewCardController implements Initializable
    public void Back(ActionEvent event)
    {
        TimHortonsRegisterJavaFinalProject.LaunchTimCard();
+       thanks.setText("");
    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
